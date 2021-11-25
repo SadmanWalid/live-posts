@@ -1,0 +1,17 @@
+<h3>{{ post?.title }}</h3>
+<p>
+  {{ post?.description }} Lorem ipsum, dolor sit amet consectetur adipisicing
+  elit. Debitis dolores perspiciatis natus rerum, repudiandae, quod dolorem
+  blanditiis id repellendus omnis possimus iusto! Praesentium accusamus qui at,
+  officia reiciendis a sint.
+</p>
+<img class="img-responsive" src="{{ post?.imgPath }}" />
+<p>Author: {{ post?.author }}</p>
+<p>Date : {{ post?.date }}</p>
+
+<button type="button" class="btn btn-primary btn-sm" (click)="onLikePost()">
+  <span class="glyphicon glyphicon-thumbs-up"></span> Like ({{ post?.numberOfLikes }})
+</button> <br><br>
+<button class="btn btn-success" (click)="onEdit()">Edit</button> |
+<button class="btn btn-danger" (click)="onDelete()">Delete</button>
+<hr />
