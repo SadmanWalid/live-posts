@@ -11,7 +11,10 @@
 
 <button type="button" class="btn btn-primary btn-sm" (click)="onLikePost()">
   <span class="glyphicon glyphicon-thumbs-up"></span> Like ({{ post?.numberOfLikes }})
-</button> <br><br>
+</button> 
+<button type="button" class="btn btn-default btn-sm" (click)="onDislikePost()">
+  <span class="glyphicon glyphicon-thumbs-down"></span> Like ({{ post?.numberOfDislikes }})
+</button> <br><br> 
 <button class="btn btn-success" (click)="onEdit()">Edit</button> |
 <button class="btn btn-danger" (click)="onDelete()">Delete</button>
 <hr />

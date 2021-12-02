@@ -58,6 +58,9 @@ export class PostService {
   setLikes(index:number){
     this.listOfPosts[index].numberOfLikes++;
   }
+  setDislikes(index:number){
+    this.listOfPosts[index].numberOfDislikes--;
+  }
   //service 7
    setPosts(listOfPosts: Post[]){
      this.listOfPosts = listOfPosts;

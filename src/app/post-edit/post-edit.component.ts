@@ -53,6 +53,7 @@ export class PostEditComponent implements OnInit {
       imagePath,
       'author@author.com',
       new Date(),
+      0,
       0
     );
     //add post

@@ -30,4 +30,8 @@ export class PostComponent implements OnInit {
     this.postService.setLikes(this.index);
     console.log("Index: "+this.index)
   }
+  onDislikePost(){
+    this.postService.setDislikes(this.index);
+
+  }
 }
